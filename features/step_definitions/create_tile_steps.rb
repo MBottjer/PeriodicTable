@@ -9,4 +9,6 @@ end
 
 Then(/^I should see the tile posted on the homepage$/) do
 	click_button 'Create Tile'
+	expect(current_path).to eq '/'
+	expect(page).to have_content "span"
 end

@@ -4,6 +4,18 @@ class TilesController < ApplicationController
 	end
 
 	def create
-		render plain: params[:tile].inspect
+		@tile = Tile.new(article_params)
+
+		@tile.save
+		redirect_to '/'
 	end
+
+	def show
+		@tile = Tile.find(params[:id])
+	end
+
+	private
+		def article_params
+			params.require(:tile).permit(:element, :description, :is_html5)
+		end
 end
