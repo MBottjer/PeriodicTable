@@ -13,13 +13,13 @@
   <button class="button" data-filter=".tabular">Tabular Data</button>
   <button class="button" data-filter=".forms">Forms</button>
   <button class="button" data-filter=".interactive">Interactive Elements</button>
-  <button class="button" data-filter=".html5">HTML 5</button>
+  <button class="button" data-filter=".true">HTML 5</button>
 </div>
 <div id="container" class="">
 	
 	<% @tiles.each do |tile| %>
 		
-		<div class="element-container <%= tile.category.name.downcase  %>">
+		<div class="element-container <%= tile.category.name.downcase  %> <%= tile.is_html5 %>">
 			<h3 class="element-name"><%= tile.element %></h3>
 			<% if tile.is_html5 %>
 				<div class="html5"><%= image_tag("logo.png", :class=> "html-logo")%></div>
