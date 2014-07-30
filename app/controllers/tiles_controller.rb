@@ -16,6 +16,6 @@ class TilesController < ApplicationController
 
 	private
 		def article_params
-			params.require(:tile).permit(:element, :description, :is_html5)
+			params.require(:tile).permit(:element, :description, :is_html5, :category_id)
 		end
 end

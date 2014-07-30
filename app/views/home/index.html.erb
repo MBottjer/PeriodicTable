@@ -1,16 +1,22 @@
-<h1>Periodic Table of HTML Elements</h1>
+<div id="background">
+<h1 id="title">The HTML Elements</h1>
 <div id="container" class="">
 	
 	<% @tiles.each do |tile| %>
 		
-		<div class="element-container">
-			<h3><%= tile.element %></h3>
-			<p><%= tile.description %></p>
-			<p><%= tile.is_html5 %></p>
+		<div class="element-container <%= tile.category.name.downcase  %>">
+			<h3 class="element-name"><%= tile.element %></h3>
+			<% if tile.is_html5 %>
+				<div class="html5"><%= image_tag("logo.png", :class=> "html-logo")%></div>
+			<% end %>
+			<p class="element-description">
+				<%= truncate(tile.description, :length => 60) %>
+			</p>
 		</div>
 	
 	<% end %>
 
+</div>
 </div>
 
 

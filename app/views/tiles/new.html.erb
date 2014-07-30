@@ -16,7 +16,7 @@
 	</p>
 
 	<p>
-		
+		<%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name) %>
 	</p>
 
 	<p>
