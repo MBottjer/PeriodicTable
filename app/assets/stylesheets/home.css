@@ -80,23 +80,23 @@ div.element-container.forms {
 }
 
 div.element-container.interactive {
-
+	background: hsl( 285, 100%, 60%);
 }
 
 div.element-container.grouping {
-
+	background: hsl( 20, 100%, 55%);
 }
 
 div.element-container.scripting {
-
+	background: hsl( 922, 100%, 50%);
 }
 
 div.element-container.metadata {
-
+	background: hsl( 55, 100%, 60%);
 }
 
 div.element-container.root {
-
+	background-color: #FFBF00;
 }
 
 /*-------End-------*/
