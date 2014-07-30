@@ -8,6 +8,15 @@ h1#title {
 	font-size:50px;
 }
 
+#selector-title {
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#filters {
+	padding-bottom:20px;
+}
+
 div#container {
 	width:100%;
 	height:80%;
@@ -33,7 +42,8 @@ div.html5 {
 h3.element-name {
 	display:inline-block;
 	margin-top:5px;
-	font-size:20px;
+	margin-bottom:10px;
+	font-size:25px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:900;
 	color:white;
@@ -50,52 +60,53 @@ img.html-logo {
 p.element-description {
 	font-size:13px;
 	font-weight:900;
+	color:white;
 	font-family: 'Open Sans', sans-serif;
 }
 
 /*-------Colour Coding System-------*/
 
-div.element-container.sections {
+div.sections {
 	background: #FBE100;
 }
 
-div.element-container.text-level {
+div.text-level {
 	background: #FF9F00;
 }
 
-div.element-container.edits {
+div.edits {
 	background: #6EE80C;
 }
 
-div.element-container.embedded {
+div.embedded {
 	background: #F41C54;
 }
 
-div.element-container.tabular {
+div.tabular {
 	background: #13CDFF;
 }
 
-div.element-container.forms {
+div.forms {
 	background: #2500AE;
 }
 
-div.element-container.interactive {
+div.interactive {
 	background: #BF51E8;
 }
 
-div.element-container.grouping {
+div.grouping {
 	background: #E81EC2;
 }
 
-div.element-container.scripting {
+div.scripting {
 	background: #0CE85A;
 }
 
-div.element-container.metadata {
+div.metadata {
 	background: #0CE5ED;
 }
 
-div.element-container.root {
+div.root {
 	background-color: #FFBF00;
 }
 
@@ -105,7 +116,7 @@ div.element-container.root {
 
 .button {
   display: inline-block;
-  padding: 0.5em 1.0em;
+  padding: 0.5em 0.4em;
   background: #EEE;
   border: none;
   border-radius: 7px;
