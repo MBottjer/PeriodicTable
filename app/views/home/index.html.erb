@@ -1,5 +1,20 @@
 <div id="background">
 <h1 id="title">The HTML Elements</h1>
+<div id="filters" class="button-group">
+  <button class="button is-checked" data-filter="*">Show All</button>
+  <button class="button" data-filter=".root">Root Element</button>
+  <button class="button" data-filter=".metadata">Document Metadata</button>
+  <button class="button" data-filter=".scripting">Scripting</button>
+  <button class="button" data-filter=".sections">Sections</button>
+  <button class="button" data-filter=".grouping">Grouping Content</button>
+  <button class="button" data-filter=".semantics">Text-level Semantics</button>
+  <button class="button" data-filter=".edits">Edits</button>
+  <button class="button" data-filter=".embedded">Embedded Content</button>
+  <button class="button" data-filter=".tabular">Tabular Data</button>
+  <button class="button" data-filter=".forms">Forms</button>
+  <button class="button" data-filter=".interactive">Interactive Elements</button>
+  <button class="button" data-filter=".html5">HTML 5</button>
+</div>
 <div id="container" class="">
 	
 	<% @tiles.each do |tile| %>
