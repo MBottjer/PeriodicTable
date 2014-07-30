@@ -51,7 +51,7 @@ h3.element-name {
 }
 
 img.html-logo {
-	width:15px;
+	width:25px;
 	position:absolute;
 	top:5px;
 	right:5px;
@@ -62,6 +62,15 @@ p.element-description {
 	font-weight:900;
 	color:white;
 	font-family: 'Open Sans', sans-serif;
+}
+
+p.inline-or-block {
+	position:absolute;
+	bottom:-5px;
+	right:5px;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	font-size:10px;
 }
 
 /*-------Colour Coding System-------*/
@@ -119,13 +128,18 @@ div.root {
   padding: 0.5em 0.4em;
   background: #EEE;
   border: none;
-  border-radius: 7px;
   background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
   color: #222;
   font-family: sans-serif;
   font-size: 16px;
   text-shadow: 0 1px white;
   cursor: pointer;
+  font-weight:900;
+}
+
+.red {
+	background-color: red;
+	color:white;
 }
 
 .button:hover {
@@ -156,12 +170,28 @@ div.root {
 
 .button-group .button {
   float: left;
-  border-radius: 0;
-  margin-left: 0;
   margin-right: 1px;
+  border-radius:0.5em 0.5em 0.5em 0.5em;
 }
 
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+#block-or-inline {
+	font-size:13px;
+	font-weight:900;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	padding-top:80px;
+}
+
+#block-or-inline .button.left-radius { 
+	border-radius: 0.5em 0 0 0.5em;
+	margin-left:0;
+	font-weight:900;
+}
+
+#block-or-inline .button:last-child { 
+	border-radius: 0 0.5em 0.5em 0; 
+	margin-left: 0;
+	font-weight:900;
+}
 
 /*------End------*/

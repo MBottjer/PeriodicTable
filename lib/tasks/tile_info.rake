@@ -19,4 +19,16 @@ categories.each_key do |category|
 	end
 end
 
+block_url = "https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements"
+block_doc = Nokogiri::HTML(open(block_url))
+inline_url = "https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente"
+inline_doc = Nokogiri::HTML(open(inline_url))
+
+	Tile.all.each do |tile|
+		if block_doc.css(".threecolumns code").text.to_s.include? tile.element
+			Tile.find(tile.id).update_column(:blockOrInline, "block")
+		elsif inline_doc.css("p+ ul").text.split(', ').map(&:lstrip).include? tile.element
+			Tile.find(tile.id).update_column(:blockOrInline, "inline")
+		end
+	end
 end

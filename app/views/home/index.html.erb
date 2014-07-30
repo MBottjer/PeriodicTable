@@ -2,7 +2,7 @@
 <h1 id="title">The HTML Elements</h1>
 <h3 id="selector-title">Select A Category:</h3>
 <div id="filters" class="button-group">
-  <button class="button is-checked" data-filter="*">Show All</button>
+  <button class="button is-checked red" data-filter="*">Show All</button>
   <button class="button" data-filter=".root">Root Element</button>
   <button class="button" data-filter=".metadata">Document Metadata</button>
   <button class="button" data-filter=".scripting">Scripting</button>
@@ -15,18 +15,25 @@
   <button class="button" data-filter=".forms">Forms</button>
   <button class="button" data-filter=".interactive">Interactive Elements</button>
   <button class="button" data-filter=".true">HTML 5</button>
+  <div id="block-or-inline">
+  	<p>Filter by block or inline elements:</p>
+  	<button class="button left-radius" data-filter=".block">Block</button>
+  	<button class="button" data-filter=".inline">Inline</button>
+  </div>
 </div>
 <div id="container" class="">
 	
 	<% @tiles.each do |tile| %>
 		
-		<div class="element-container <%= tile.category.name.downcase  %> <%= tile.is_html5 %>">
+		<div class="element-container <%= tile.category.name.downcase  %> <%= tile.is_html5 %> <%= tile.blockOrInline %>">
 			<h3 class="element-name"><%= tile.element %></h3>
 			<% if tile.is_html5 %>
 				<div class="html5"><%= image_tag("logo.png", :class=> "html-logo")%></div>
 			<% end %>
 			<p class="element-description">
 				<%= truncate(tile.description, :length => 60) %>
+			</p>
+			<p class="inline-or-block"><%= tile.blockOrInline if tile.blockOrInline != nil %>
 			</p>
 		</div>
 	
