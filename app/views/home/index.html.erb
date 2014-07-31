@@ -4,16 +4,16 @@
 	<div id="filters" class="button-group">
   		<button class="button is-checked red" data-filter="*">Show All</button>
   		<button class="button" data-filter=".root">Root Element</button>
-  		<button class="button" data-filter=".metadata">Document Metadata</button		>
+  		<button class="button" data-filter=".metadata">Document Metadata</button>
   		<button class="button" data-filter=".scripting">Scripting</button>
   		<button class="button" data-filter=".sections">Sections</button>
   		<button class="button" data-filter=".grouping">Grouping Content</button>
-  		<button class="button" data-filter=".semantics">Text-level Semantics</		button>
+  		<button class="button" data-filter=".semantics">Text-level Semantics</button>
   		<button class="button" data-filter=".edits">Edits</button>
   		<button class="button" data-filter=".embedded">Embedded Content</button>
   		<button class="button" data-filter=".tabular">Tabular Data</button>
   		<button class="button" data-filter=".forms">Forms</button>
-  		<button class="button" data-filter=".interactive">Interactive Elements</		button>
+  		<button class="button" data-filter=".interactive">Interactive Elements</button>
   		<button class="button" data-filter=".true">HTML 5</button>
   		<div id="block-or-inline">
   			<p>Filter by block or inline elements:</p>
@@ -21,26 +21,23 @@
   			<button class="button" data-filter=".inline">Inline</button>
   		</div>
 	</div>
-	<div id="container" class="">
+	<main id="container" class="">
 	
 		<% @tiles.each do |tile| %>
 		
-			<div class="element-container <%= tile.category.name.downcase  %> <%= tile.is_html5 %> <%= tile.blockOrInline %>">
+			<article class="element-container <%= tile.category.name.downcase  %> <%= tile.is_html5 %> <%= tile.blockOrInline %>">
 				<h3 class="element-name"><%= tile.element %></h3>
 				<% if tile.is_html5 %>
-					<div class="html5"><%= image_tag("logo.png", :class=> "html-logo")%></div>
+					<figure class="html5"><%= image_tag("logo.png", :class=> "html-logo")%></figure>
 				<% end %>
-				<p class="element-description">
-					<%= tile.description %>
-				</p>
-				<p class="inline-or-block"><%= tile.blockOrInline if tile.blockOrInline != nil %>
-				</p>
-			</div>
+				<p class="element-description"><%= tile.description %></p>
+				<div class="inline-or-block"><%= tile.blockOrInline if tile.blockOrInline != nil %></p>
+			</article>
 	
 		<% end %>
-	</div>
+	</main>
 	<div id="fade"></div>
-	<div id="overlay">
+	<aside id="overlay">
 		<h1>Attributions</h1>
 		<ul>
 			<li>The layout and filtering effects were created using <a href="http://isotope.metafizzy.co/">Isotope</a></li>
@@ -52,7 +49,7 @@
 		<a href="https://github.com/MBottjer" id="github">Github</a>
 		<a href="https://uk.linkedin.com/in/mbottjer/" id="linked-in">LinkedIn</a>
 		<a onclick="document.getElementById('overlay').style.display='none';document.getElementById('fade').style.display='none'" href="javascript:void(0)" id="close-modal">Close</a>
-	</div>
+	</aside>
 
 </div>
 

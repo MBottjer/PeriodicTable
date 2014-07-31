@@ -21,7 +21,7 @@ h1#title {
 	margin-left:20px;
 }
 
-div#container {
+#container {
 	width:88%;
 	height:80%;
 	position:relative;
@@ -31,7 +31,7 @@ div#container {
 	margin-left:20px;
 }
 
-div.element-container {
+article.element-container {
 	width: 180px;
 	height: auto;
 	background-color:blue;
@@ -40,7 +40,7 @@ div.element-container {
 	margin:10px;
 }
 
-div.html5 {
+figure.html5 {
 	display:inline-block;
 }
 
@@ -69,7 +69,7 @@ p.element-description {
 	font-family: 'Open Sans', sans-serif;
 }
 
-p.inline-or-block {
+div.inline-or-block {
 	position:absolute;
 	bottom:-8px;
 	right:5px;
@@ -81,47 +81,47 @@ p.inline-or-block {
 
 /*-------Colour Coding System-------*/
 
-div.sections {
+article.sections {
 	background: #FF6347;
 }
 
-div.text-level {
+article.text-level {
 	background: #FF9F00;
 }
 
-div.edits {
+article.edits {
 	background: #6EE80C;
 }
 
-div.embedded {
+article.embedded {
 	background: #F41C54;
 }
 
-div.tabular {
+article.tabular {
 	background: #13CDFF;
 }
 
-div.forms {
+article.forms {
 	background: #2500AE;
 }
 
-div.interactive {
+article.interactive {
 	background: #BF51E8;
 }
 
-div.grouping {
+article.grouping {
 	background: #E81EC2;
 }
 
-div.scripting {
+article.scripting {
 	background: #0CE85A;
 }
 
-div.metadata {
+article.metadata {
 	background: #0CE5ED;
 }
 
-div.root {
+article.root {
 	background-color: #FFD700;
 }
 
