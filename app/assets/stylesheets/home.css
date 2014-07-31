@@ -236,7 +236,7 @@ div.root {
     border: 2px solid black;
     background-color: #ffffff;
     width: 50%;
-    height: 50%;
+    height: 40%;
     opacity:1;
     z-index: 100;
     font-family: 'Open Sans', sans-serif;
@@ -267,10 +267,30 @@ div.root {
 	color:blue;
 }
 
+#overlay h3 {
+	position:absolute;
+	bottom:5px;
+	left:20px;
+}
+
+#github {
+	color:black;
+	position:absolute;
+	bottom:10px;
+	right:20px;
+}
+
 #close-modal {
 	position:absolute;
 	top:5px;
-	right:10px;
+	right:20px;
+}
+
+#linked-in {
+	color:#0077b5;
+	bottom:10px;
+	right:100px;
+	position:absolute;
 }
 
 
