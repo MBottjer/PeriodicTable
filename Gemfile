@@ -29,7 +29,7 @@ gem 'spring',        group: :development
 gem "font-awesome-rails"
 gem 'nokogiri'
 
-group :production do
+group :production, :staging do
 	gem 'rails_12factor'
 end
 
