@@ -26,8 +26,6 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
-  config.assets.compress = true
-
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
 
@@ -61,7 +59,6 @@ Rails.application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  config.assets.precompile += %w( '.woff', '.eot', '.svg', '.ttf' )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
