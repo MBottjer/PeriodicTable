@@ -273,33 +273,45 @@ div.root {
 #overlay ul li a {
 	text-decoration: none;
 	font-weight:900;
-	color:blue;
+	color:#0077b5;
 }
 
-#overlay h3 {
+#author-intro {
 	position:absolute;
-	bottom:5px;
+	bottom:80px;
 	left:20px;
 }
 
 #github {
 	color:black;
 	position:absolute;
-	bottom:10px;
+	bottom:40px;
 	right:20px;
+	color:#0077b5;
+	font-weight:900;
 }
 
 #close-modal {
 	position:absolute;
 	top:5px;
 	right:20px;
+	color:#0077b5;
 }
 
 #linked-in {
 	color:#0077b5;
-	bottom:10px;
+	bottom:40px;
 	right:100px;
 	position:absolute;
+	font-weight:900;
+}
+
+#name {
+	font-family: 'Dancing Script', cursive;
+	bottom:0;
+	left:60px;
+	position:absolute;
+	font-size:40px;
 }
 
 
