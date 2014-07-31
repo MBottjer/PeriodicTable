@@ -223,6 +223,14 @@ div.root {
 	text-decoration: none;
 }
 
+#footer p {
+	color: white;
+	display:inline-block;
+	font-size:10px;
+	right:0;
+	position:absolute;
+}
+
 /*------End-----*/
 
 /*------Modal------*/

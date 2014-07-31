@@ -18,7 +18,6 @@ production:
   encoding: unicode
   database: periodic_production
   pool: 5
-  username: periodic
   password:
 
 cucumber:
